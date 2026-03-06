@@ -1,0 +1,16 @@
+version: '3'
+services:
+  agent:
+    image: omega-agent:latest
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+  agentbus:
+    image: omega-agentbus:latest
+    restart: always
+    ports:
+      - "8081:8081"
+    depends_on:
+      - agent
