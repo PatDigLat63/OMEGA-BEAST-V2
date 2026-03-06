@@ -52,7 +52,7 @@ WALLETS[PATRICK]=""
 WALLETS[DJ]=""
 WALLETS[HASHIM]=""
 WALLETS[BOSSMAN]=""
-BTC_TAPROOT="bc1ph9lf9ngkyuuqqjuw4h8aqtz0dp8fhxc520mk7wl0649eczd06qvqcw7vv4"
+BTC_TAPROOT=""
 
 # ═══════════════════════════════════════════════════════
 # [1/12] SYSTEM PREPARATION
@@ -90,6 +90,7 @@ collect_secrets() {
     read -p "ChangeNow API Key: " CN_KEY
     read -p "Coinglass API Key: " CG_KEY
     read -p "Agent Hustle API Key: " AH_KEY
+    read -p "Bitcoin Taproot address (your BTC receiving address): " BTC_TAPROOT
 
     cat > "$W/config/.env" << ENVEOF
 NODE_ENV=production
