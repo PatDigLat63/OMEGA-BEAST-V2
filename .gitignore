@@ -1,0 +1,19 @@
+# Environment & secrets — never commit these
+.env
+config/.env
+*.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+logs/
+
+# Docker build artefacts
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
