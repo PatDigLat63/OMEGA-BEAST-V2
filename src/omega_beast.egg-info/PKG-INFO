@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: omega-beast
+Version: 2.0.0
+Summary: Autonomous agent orchestration framework with security features
+Requires-Python: >=3.10
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Dynamic: license-file
