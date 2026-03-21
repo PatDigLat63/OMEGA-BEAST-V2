@@ -1,2 +1,0 @@
-[console_scripts]
-omega-beast = omega_beast.cli:main
